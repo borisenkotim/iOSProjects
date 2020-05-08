@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0OI-V0-jKK">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FirstView" id="BYZ-38-t0r" customClass="ViewController" customModule="FoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ztn-qE-Zha">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="TLq-oe-wBj"/>
+                                    <constraint firstAttribute="height" constant="100" id="rSd-GE-tGs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxY-4A-kE6">
+                                <rect key="frame" x="164.5" y="415.5" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1o-Wn-Q4S">
+                                <rect key="frame" x="171.5" y="617" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n7q-1x-CfM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjO-Ks-kdQ">
+                                <rect key="frame" x="16" y="41" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pl7-7b-mzf">
+                                <rect key="frame" x="16" y="41" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My #1 favorite food is..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaU-7N-Tir">
+                                <rect key="frame" x="98.5" y="108" width="178" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ztn-qE-Zha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5jc-Iz-sDg"/>
+                            <constraint firstItem="Ztn-qE-Zha" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="81E-KK-fu2"/>
+                            <constraint firstItem="X1o-Wn-Q4S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9e0-sJ-fDl"/>
+                            <constraint firstItem="yaU-7N-Tir" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Prr-cw-A7X"/>
+                            <constraint firstItem="GxY-4A-kE6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fwT-bu-LdP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X1o-Wn-Q4S" secondAttribute="bottom" constant="20" id="mSg-IL-kXg"/>
+                            <constraint firstItem="yaU-7N-Tir" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nYi-gv-f9e"/>
+                            <constraint firstItem="GxY-4A-kE6" firstAttribute="top" secondItem="Ztn-qE-Zha" secondAttribute="bottom" constant="32" id="uaq-Rf-n87"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" prompt="Food App" id="27a-h0-n6v">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="HYn-qc-oz5">
+                            <connections>
+                                <segue destination="2bO-UH-wqf" kind="show" identifier="goToSecondViewButton" id="P6J-KP-uRZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="foodImageView" destination="Ztn-qE-Zha" id="8mY-GK-ejB"/>
+                        <outlet property="foodLabel" destination="GxY-4A-kE6" id="edQ-7B-RWl"/>
+                        <outlet property="headingLabel" destination="yaU-7N-Tir" id="y94-n4-lYY"/>
+                        <segue destination="2bO-UH-wqf" kind="show" identifier="TransitionFromMain" id="oHZ-0h-Wea"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874.39999999999998" y="138.98050974512745"/>
+        </scene>
+        <!--Add Food-->
+        <scene sceneID="PIf-zl-bf2">
+            <objects>
+                <viewController storyboardIdentifier="SecondView" id="2bO-UH-wqf" customClass="AddFoodViewController" customModule="FoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5TN-hM-dVV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Name of Food #1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBS-ZB-vkp">
+                                <rect key="frame" x="100" y="98" width="175" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nnf-Ep-Jrr">
+                                <rect key="frame" x="20" y="129" width="335" height="34"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" allowsDirectInteraction="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="editTextClicked:" destination="2bO-UH-wqf" eventType="editingDidBegin" id="arR-vu-sz6"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SBS-ZB-vkp" firstAttribute="centerX" secondItem="5TN-hM-dVV" secondAttribute="centerX" id="4oS-gP-OQE"/>
+                            <constraint firstItem="nnf-Ep-Jrr" firstAttribute="top" secondItem="SBS-ZB-vkp" secondAttribute="bottom" constant="10" id="KwG-8t-MHJ"/>
+                            <constraint firstItem="nnf-Ep-Jrr" firstAttribute="leading" secondItem="SLW-QD-zj6" secondAttribute="leading" constant="20" id="L4I-wC-lJJ"/>
+                            <constraint firstItem="SBS-ZB-vkp" firstAttribute="centerX" secondItem="5TN-hM-dVV" secondAttribute="centerX" id="NHJ-l3-kdn"/>
+                            <constraint firstItem="SLW-QD-zj6" firstAttribute="trailing" secondItem="nnf-Ep-Jrr" secondAttribute="trailing" constant="20" id="lJf-bF-ABO"/>
+                            <constraint firstItem="SBS-ZB-vkp" firstAttribute="top" secondItem="SLW-QD-zj6" secondAttribute="top" constant="20" id="nHe-V1-rH4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SLW-QD-zj6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Food" prompt="Food App" id="kUj-B3-Hhu">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="McH-Oc-zdp">
+                            <connections>
+                                <action selector="cancelTapped:" destination="2bO-UH-wqf" id="EJh-C4-IGb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="GHZ-e8-4bR">
+                            <connections>
+                                <action selector="saveTapped:" destination="2bO-UH-wqf" id="uSI-VK-0yT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="message" destination="SBS-ZB-vkp" id="sNb-iR-FwW"/>
+                        <outlet property="userInput" destination="nnf-Ep-Jrr" id="QpA-VH-uhb"/>
+                        <segue destination="ngs-IK-kOU" kind="unwind" identifier="unwindOnBothClicks" unwindAction="unwindFromSecondViewWithSender:" id="kFj-6T-o1o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pd5-G1-fQ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ngs-IK-kOU" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1776.8" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kTZ-57-hrJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0OI-V0-jKK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="eca-Yt-8Vi"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gkx-7O-n0e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="R0h-T2-ICq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uv0-20-asN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-64.799999999999997" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pizza.png" width="478" height="479"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="oHZ-0h-Wea"/>
+    </inferredMetricsTieBreakers>
+</document>
